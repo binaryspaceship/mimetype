@@ -16,17 +16,6 @@
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-Downloader<Downloader>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.binaryspaceship.crawling.ChromeCrawler",
-            "args": "",
-            "projectName": "Downloader"
-        },
-        {
-            "type": "java",
             "name": "Debug (Attach)",
             "request": "attach",
             "hostName": "localhost",

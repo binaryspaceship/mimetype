@@ -24,12 +24,6 @@
                 "kind": "build",
                 "isDefault": true
             }
-        },
-        {
-            "label": "run",
-            "type": "shell",
-            "command": "java -cp 'dist/Downloader-0.0.1.jar:dist/dependencies/*' com.binaryspaceship.crawling.ChromeCrawler",
-            "problemMatcher": []
         }
     ]
 }
