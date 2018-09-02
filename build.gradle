@@ -75,10 +75,7 @@ publishing {
     }
 }
 
-
-travis = System.getenv('TRAVIS')
-
-if (travis) {
+if (System.getenv('TRAVIS')) {
     signing {
         sign configurations.archives
     }
