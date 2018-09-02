@@ -19,6 +19,10 @@ test {
         excludeTags 'slow'
         includeEngines 'junit-jupiter'
     }
+    
+    afterTest { desc, result -> 
+        logger.quiet "Test ${desc.name} [${desc.className}]: ${result.resultType}"
+    }
 }
 
 dependencies {
