@@ -75,7 +75,7 @@ publishing {
     }
 }
 
-if (System.getenv('TRAVIS')) {
+if (!System.getenv('TRAVIS')) {
     signing {
         sign configurations.archives
     }
