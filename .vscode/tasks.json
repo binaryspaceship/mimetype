@@ -1,0 +1,35 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build:no-publish",
+            "type": "shell",
+            "command": "gradle build",
+            "problemMatcher": []
+        },
+        {
+            "label": "publish",
+            "type": "shell",
+            "command": "gradle uploadArchives",
+            "problemMatcher": []
+        },
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gradle build && gradle uploadArchives",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "java -cp 'dist/Downloader-0.0.1.jar:dist/dependencies/*' com.binaryspaceship.crawling.ChromeCrawler",
+            "problemMatcher": []
+        }
+    ]
+}
