@@ -1,6 +1,6 @@
 # Mime type utilities
 
-[![Build Status](https://travis-ci.org/binaryspaceship/mimetype.svg?branch=master)](https://travis-ci.org/binaryspaceship/mimetype)
+[![Build Status](https://travis-ci.com/binaryspaceship/mimetype.svg?branch=master)](https://travis-ci.com/binaryspaceship/mimetype)
 
 This package contains utilities for manipulating mime types in Java.
 
