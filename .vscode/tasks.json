@@ -6,19 +6,19 @@
         {
             "label": "build:no-publish",
             "type": "shell",
-            "command": "gradle build",
+            "command": "./gradlew build",
             "problemMatcher": []
         },
         {
             "label": "publish",
             "type": "shell",
-            "command": "gradle uploadArchives",
+            "command": "./gradlew publishToMavenLocal",
             "problemMatcher": []
         },
         {
             "label": "build",
             "type": "shell",
-            "command": "gradle build && gradle uploadArchives",
+            "command": "./gradlew build && ./gradlew publishToMavenLocal",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
